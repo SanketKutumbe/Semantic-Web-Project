@@ -1,0 +1,1362 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.spsclassifiedbuyin.tk/Ontology1.owl#"
+     xml:base="http://www.spsclassifiedbuyin.tk/Ontology1.owl"
+     xmlns:Ontology1="http://www.semanticweb.org/pooja/Ontology1.owl#"
+     xmlns:Ontology2="http://www.spsclassifiedbuyin.tk/Ontology2.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.spsclassifiedbuyin.tk/Ontology1.owl">
+        <owl:imports rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#ChannelType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#ChannelType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Entertainments"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Color -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Color">
+        <owl:equivalentProperty rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Color"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Electronics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#CondensorType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#CondensorType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#AC"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#PlayerType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#PlayerType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Theaters"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Price">
+        <owl:equivalentProperty rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Price"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Electronics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#Color -->
+
+    <owl:DatatypeProperty rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Color">
+        <rdfs:domain rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#TV_Appliances_and_Electronics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#Price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Price">
+        <rdfs:domain rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#TV_Appliances_and_Electronics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#AC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#AC">
+        <owl:equivalentClass rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Air_Conditioners"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Electronics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Bluetooth_Speakers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Bluetooth_Speakers">
+        <owl:equivalentClass rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Wireless_Bluetooth_Speaker"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Entertainments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Coffee_Makers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Coffee_Makers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Kitchen_Appliances"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Dishwashers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Dishwashers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Kitchen_Appliances"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Electric_Kettle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Electric_Kettle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Kitchen_Appliances"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Electronics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Electronics">
+        <owl:equivalentClass rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#TV_Appliances_and_Electronics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Fans -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Fans">
+        <owl:equivalentClass rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Small_Home_Appliances"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Irons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Hand_Blenders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Hand_Blenders">
+        <owl:equivalentClass rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Hand_Grinders"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Kitchen_Appliances"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Home_Audio_Speakers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Audio_Speakers">
+        <owl:equivalentClass rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Audio_Systems"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Entertainments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Home_Entertainments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Entertainments">
+        <owl:equivalentClass rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Entertainment_Systems"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Electronics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Home_Theaters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Theaters">
+        <owl:equivalentClass rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Theatre"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Entertainments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Induction_Cooktops -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Induction_Cooktops">
+        <owl:equivalentClass rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Inductions"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Kitchen_Appliances"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Irons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Irons">
+        <owl:equivalentClass rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Small_Home_Appliances"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Kitchen_Appliances -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Kitchen_Appliances">
+        <owl:equivalentClass rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Kitchen_and_Home_Appliances"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Electronics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Microwave_Ovens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Microwave_Ovens">
+        <owl:equivalentClass rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ovens"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Kitchen_Appliances"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Small_Home_Appliances -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Small_Home_Appliances">
+        <owl:equivalentClass rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Appliances"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Electronics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#Air_Conditioners -->
+
+    <owl:Class rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Air_Conditioners">
+        <rdfs:subClassOf rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#TV_Appliances_and_Electronics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans -->
+
+    <owl:Class rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans">
+        <rdfs:subClassOf rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Appliances"/>
+        <owl:disjointWith rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#Hand_Grinders -->
+
+    <owl:Class rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Hand_Grinders">
+        <rdfs:subClassOf rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Kitchen_and_Home_Appliances"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Appliances -->
+
+    <owl:Class rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Appliances">
+        <rdfs:subClassOf rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#TV_Appliances_and_Electronics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Audio_Systems -->
+
+    <owl:Class rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Audio_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Entertainment_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Entertainment_Systems -->
+
+    <owl:Class rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Entertainment_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#TV_Appliances_and_Electronics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Theatre -->
+
+    <owl:Class rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Theatre">
+        <rdfs:subClassOf rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Entertainment_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#Inductions -->
+
+    <owl:Class rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Inductions">
+        <rdfs:subClassOf rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Kitchen_and_Home_Appliances"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#Kitchen_and_Home_Appliances -->
+
+    <owl:Class rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Kitchen_and_Home_Appliances">
+        <rdfs:subClassOf rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#TV_Appliances_and_Electronics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ovens -->
+
+    <owl:Class rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ovens">
+        <rdfs:subClassOf rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Kitchen_and_Home_Appliances"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press -->
+
+    <owl:Class rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press">
+        <rdfs:subClassOf rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Appliances"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#TV_Appliances_and_Electronics -->
+
+    <owl:Class rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#TV_Appliances_and_Electronics"/>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#Wireless_Bluetooth_Speaker -->
+
+    <owl:Class rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Wireless_Bluetooth_Speaker">
+        <rdfs:subClassOf rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Entertainment_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Bajaj_17_L_Solo_Microwave_Oven -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Bajaj_17_L_Solo_Microwave_Oven">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Microwave_Ovens"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ovens"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Bajaj_23_L_Convection_Microwave_Oven -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Bajaj_23_L_Convection_Microwave_Oven">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Microwave_Ovens"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ovens"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Billion_1100_W_Non-stick_Extra-power_XR112_Dry_Iron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Billion_1100_W_Non-stick_Extra-power_XR112_Dry_Iron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Irons"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sky Blue</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">499</Ontology1:Price>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Billion_1100_W_Non-stick_Extra-power_XR112_Dry_Iron"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Irons"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Blaupunkt_PS-51_50_W_Portable_Bluetooth_Party_Speaker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Blaupunkt_PS-51_50_W_Portable_Bluetooth_Party_Speaker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Audio_Speakers"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Audio_Systems"/>
+        <Ontology1:ChannelType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0 Channel</Ontology1:ChannelType>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Bosch_SMS40E32EU_Free_Standing_12_Place_Settings_Dishwasher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Bosch_SMS40E32EU_Free_Standing_12_Place_Settings_Dishwasher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Dishwashers"/>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28990</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Bosch_SMS60L18IN_Free_Standing_12_Place_Settings_Dishwasher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Bosch_SMS60L18IN_Free_Standing_12_Place_Settings_Dishwasher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Dishwashers"/>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Butterfly_HBP17_400_Hand_Blender -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Butterfly_HBP17_400_Hand_Blender">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Hand_Blenders"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Hand_Grinders"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2849</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Carrier_1.5_Ton_5_Star_BEE_Rating_2017_Split_AC_-_White -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Carrier_1.5_Ton_5_Star_BEE_Rating_2017_Split_AC_-_White">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#AC"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Air_Conditioners"/>
+        <Ontology1:CondensorType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copper Condenser</Ontology1:CondensorType>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Carrier_2_Ton_3_Star_BEE_Rating_2017_Split_AC_-_White -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Carrier_2_Ton_3_Star_BEE_Rating_2017_Split_AC_-_White">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#AC"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Air_Conditioners"/>
+        <Ontology1:CondensorType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copper Condenser</Ontology1:CondensorType>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Cello_Infusio_II_10_Cups_Coffee_Maker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Cello_Infusio_II_10_Cups_Coffee_Maker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Coffee_Makers"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1499</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Flipkart_SmartBuy_Classic_Ceiling_Fan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Flipkart_SmartBuy_Classic_Ceiling_Fan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Fans"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ivory</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1199</Ontology1:Price>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Flipkart_SmartBuy_Classic_Ceiling_Fan"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Fans"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Flipkart_SmartBuy_Electric_Kettle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Flipkart_SmartBuy_Electric_Kettle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Electric_Kettle"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">749</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Flipkart_SmartBuy_Induction_Cooktop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Flipkart_SmartBuy_Induction_Cooktop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Induction_Cooktops"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Inductions"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1499</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Four_Star_SMALL_AIR_FAN_12_Blade_Table_Fan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Four_Star_SMALL_AIR_FAN_12_Blade_Table_Fan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Fans"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blue</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">499</Ontology1:Price>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Four_Star_SMALL_AIR_FAN_12_Blade_Table_Fan"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Fans"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Gorilla_E1-1200IV_BLDC_Motor_with_remote_control_3_Blade_Ceiling_Fan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Gorilla_E1-1200IV_BLDC_Motor_with_remote_control_3_Blade_Ceiling_Fan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Fans"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ivory</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3399</Ontology1:Price>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Gorilla_E1-1200IV_BLDC_Motor_with_remote_control_3_Blade_Ceiling_Fan"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Fans"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Grizzly_Plancha_Dry_Iron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Grizzly_Plancha_Dry_Iron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Irons"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">909</Ontology1:Price>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Grizzly_Plancha_Dry_Iron"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Irons"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Havells_Ventil_Air_DX_5_Blade_Exhaust_Fan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Havells_Ventil_Air_DX_5_Blade_Exhaust_Fan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Fans"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ivory</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1550</Ontology1:Price>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Havells_Ventil_Air_DX_5_Blade_Exhaust_Fan"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Fans"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#IFB_Neptune_VX_Free_Standing_12_Place_Settings_Dishwasher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#IFB_Neptune_VX_Free_Standing_12_Place_Settings_Dishwasher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Dishwashers"/>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Iball_HI-Bass_2.1_Home_Cinema -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Iball_HI-Bass_2.1_Home_Cinema">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Theaters"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Theatre"/>
+        <Ontology1:ChannelType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.1 Channel</Ontology1:ChannelType>
+        <Ontology1:PlayerType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DVD</Ontology1:PlayerType>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2599</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Intex_IT-2616_SUF_OS_Multimedia_55_W_Portable_Home_Audio_Speaker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Intex_IT-2616_SUF_OS_Multimedia_55_W_Portable_Home_Audio_Speaker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Audio_Speakers"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Audio_Systems"/>
+        <Ontology1:ChannelType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.1 Channel</Ontology1:ChannelType>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#JBL_Flip3_12_W_Portable_Bluetooth_Speaker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#JBL_Flip3_12_W_Portable_Bluetooth_Speaker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Bluetooth_Speakers"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Wireless_Bluetooth_Speaker"/>
+        <Ontology1:ChannelType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stereo Channel</Ontology1:ChannelType>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6299</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#LG_20_L_Solo_Microwave_Oven -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#LG_20_L_Solo_Microwave_Oven">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Microwave_Ovens"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ovens"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#LG_D1451WF_Free_Standing_14_Place_Settings_Dishwasher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#LG_D1451WF_Free_Standing_14_Place_Settings_Dishwasher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Dishwashers"/>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Laforte_Rabbit_Fan_Pink_3_Blade_Ceiling_Fan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Laforte_Rabbit_Fan_Pink_3_Blade_Ceiling_Fan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Fans"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pink</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">719</Ontology1:Price>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Laforte_Rabbit_Fan_Pink_3_Blade_Ceiling_Fan"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Fans"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Maharaja_Whiteline_EASIO_DI-104_Dry_Iron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Maharaja_Whiteline_EASIO_DI-104_Dry_Iron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Irons"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">499</Ontology1:Price>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Maharaja_Whiteline_EASIO_DI-104_Dry_Iron"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Irons"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Maharaja_Whiteline_Turbomix_HB-100_350_W_Hand_Blender -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Maharaja_Whiteline_Turbomix_HB-100_350_W_Hand_Blender">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Hand_Blenders"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Hand_Grinders"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">749</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#MarQ_by_Flipkart_20_L_Solo_Microwave_Oven -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#MarQ_by_Flipkart_20_L_Solo_Microwave_Oven">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Microwave_Ovens"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ovens"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Micromax_1.5_Ton_5_Star_BEE_Rating_2017_Split_AC_-_White -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Micromax_1.5_Ton_5_Star_BEE_Rating_2017_Split_AC_-_White">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#AC"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Air_Conditioners"/>
+        <Ontology1:CondensorType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aluminium Condenser</Ontology1:CondensorType>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Morphy_Richards_20_L_Solo_Microwave_Oven -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Morphy_Richards_20_L_Solo_Microwave_Oven">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Microwave_Ovens"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ovens"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4650</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Morphy_Richards_Fresco_4_Cups_Coffee_Maker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Morphy_Richards_Fresco_4_Cups_Coffee_Maker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Coffee_Makers"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3399</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Nova_NHM-2109_7_Speed_150_w_150_W_Hand_Blender -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Nova_NHM-2109_7_Speed_150_w_150_W_Hand_Blender">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Hand_Blenders"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Hand_Grinders"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1095</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Philips_GC1903_Steam_Iron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Philips_GC1903_Steam_Iron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Irons"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1399</Ontology1:Price>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Philips_GC1903_Steam_Iron"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Irons"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Philips_Wireless_Portable_Speaker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Philips_Wireless_Portable_Speaker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Bluetooth_Speakers"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Wireless_Bluetooth_Speaker"/>
+        <Ontology1:ChannelType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mono Channel</Ontology1:ChannelType>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1329</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Pigeon_Favourite_IC_1800_W_Induction_Cooktop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Pigeon_Favourite_IC_1800_W_Induction_Cooktop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Induction_Cooktops"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Inductions"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1475</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Preethi_Cafe_Zest_CM_210_Coffee_Maker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Preethi_Cafe_Zest_CM_210_Coffee_Maker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Coffee_Makers"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1699</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Prestige_Electric_drip_PCMD_1.0_4_cups_Coffee_Maker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Prestige_Electric_drip_PCMD_1.0_4_cups_Coffee_Maker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Coffee_Makers"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1354</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Prestige_PIC_16.0_plus_Induction_Cooktop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Prestige_PIC_16.0_plus_Induction_Cooktop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Induction_Cooktops"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Inductions"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1949</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Prestige_PKOSS_Electric_Kettle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Prestige_PKOSS_Electric_Kettle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Electric_Kettle"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silver</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">899</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Prestige_PMC_2.0_Multi_Cooker_Electric_Kettle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Prestige_PMC_2.0_Multi_Cooker_Electric_Kettle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Electric_Kettle"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1399</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Prestige_pkgss1.7_Electric_Kettle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Prestige_pkgss1.7_Electric_Kettle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Electric_Kettle"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Sansui_1.5_Ton_3_Star_BEE_Rating_2017_Split_AC_-_White -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Sansui_1.5_Ton_3_Star_BEE_Rating_2017_Split_AC_-_White">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#AC"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Air_Conditioners"/>
+        <Ontology1:CondensorType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aluminium Condenser</Ontology1:CondensorType>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Shengshou_Multi_Purpose-07_Electric_Kettle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Shengshou_Multi_Purpose-07_Electric_Kettle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Electric_Kettle"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silver</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1139</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Siemens_SN26L801IN_Free_Standing_12_Place_Settings_Dishwasher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Siemens_SN26L801IN_Free_Standing_12_Place_Settings_Dishwasher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Dishwashers"/>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33990</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#TECNIA_Atom_504_Bluetooth_5.1_Home_Cinema -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#TECNIA_Atom_504_Bluetooth_5.1_Home_Cinema">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Theaters"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Theatre"/>
+        <Ontology1:ChannelType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5,1 Channel</Ontology1:ChannelType>
+        <Ontology1:PlayerType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USB</Ontology1:PlayerType>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2799</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#TECNIA_Hexawave_5001Bluetooth_5.1_Home_Cinema -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#TECNIA_Hexawave_5001Bluetooth_5.1_Home_Cinema">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Theaters"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Theatre"/>
+        <Ontology1:ChannelType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.1 channel</Ontology1:ChannelType>
+        <Ontology1:PlayerType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USB</Ontology1:PlayerType>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3299</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Usha_EI_1602_Dry_Iron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Usha_EI_1602_Dry_Iron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Irons"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">533</Ontology1:Price>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Usha_EI_1602_Dry_Iron"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Irons"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#V-Guard_VIC_15_Induction_Cooktop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#V-Guard_VIC_15_Induction_Cooktop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Induction_Cooktops"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Inductions"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Voltas_1.5_Ton_5_Star_BEE_Rating_2017_Split_AC_-_White -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Voltas_1.5_Ton_5_Star_BEE_Rating_2017_Split_AC_-_White">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#AC"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Air_Conditioners"/>
+        <Ontology1:CondensorType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aluminium Condenser</Ontology1:CondensorType>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Zoook_ZB-JAZZ_5_W_Portable_Bluetooth_Speaker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Zoook_ZB-JAZZ_5_W_Portable_Bluetooth_Speaker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Bluetooth_Speakers"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Wireless_Bluetooth_Speaker"/>
+        <Ontology1:ChannelType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.1 Channel</Ontology1:ChannelType>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blue</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1049</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#maxlink_360_X1.5L_1_Cups_Coffee_Maker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#maxlink_360_X1.5L_1_Cups_Coffee_Maker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Coffee_Makers"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silver</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1299</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#F&amp;D_F210X_15_W_Portable_Bluetooth_Home_Audio_Speaker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#F&amp;D_F210X_15_W_Portable_Bluetooth_Home_Audio_Speaker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Audio_Speakers"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Audio_Systems"/>
+        <Ontology1:ChannelType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.1 Channel</Ontology1:ChannelType>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#F&amp;D_F-203G_1500_W_Portable_Laptop/Desktop_Speaker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#F&amp;D_F-203G_1500_W_Portable_Laptop/Desktop_Speaker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Audio_Speakers"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Audio_Systems"/>
+        <Ontology1:ChannelType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.1 Channel</Ontology1:ChannelType>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1299</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Flipkart_SmartBuy_5W_Powerful_Bass_Bluetooth_Speaker__(Grey,_Mono_Channel) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Flipkart_SmartBuy_5W_Powerful_Bass_Bluetooth_Speaker__(Grey,_Mono_Channel)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Bluetooth_Speakers"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Wireless_Bluetooth_Speaker"/>
+        <Ontology1:ChannelType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mono Channel</Ontology1:ChannelType>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grey</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1299</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Intex_IT-_881S_16_W_Laptop/Desktop_Speaker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Intex_IT-_881S_16_W_Laptop/Desktop_Speaker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Audio_Speakers"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Audio_Systems"/>
+        <Ontology1:ChannelType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.1 Channel</Ontology1:ChannelType>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">899</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Philips_BT64B/94_3_W_Portable_Bluetooth_Speaker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Philips_BT64B/94_3_W_Portable_Bluetooth_Speaker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Bluetooth_Speakers"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Wireless_Bluetooth_Speaker"/>
+        <Ontology1:ChannelType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mono Channel</Ontology1:ChannelType>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1390</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Philips_HD4928/01_Induction_Cooktop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Philips_HD4928/01_Induction_Cooktop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Induction_Cooktops"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Inductions"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2599</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Philips_HR1351/C_250_W_Hand_Blender -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Philips_HR1351/C_250_W_Hand_Blender">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Hand_Blenders"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Hand_Grinders"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1399</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Philips_HR_1459/00_300_W_Hand_Blender -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Philips_HR_1459/00_300_W_Hand_Blender">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Hand_Blenders"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Hand_Grinders"/>
+        <Ontology1:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</Ontology1:Color>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1899</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Samsung_HT_J5550K/XL_5.1_Tower_Speaker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Samsung_HT_J5550K/XL_5.1_Tower_Speaker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Theaters"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Theatre"/>
+        <Ontology1:ChannelType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.1 Channel</Ontology1:ChannelType>
+        <Ontology1:PlayerType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blu-Ray</Ontology1:PlayerType>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27999</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pooja/Ontology1.owl#Sony_DAV-TZ145_5.1_2_Front_Speakers,_2_Surround_Speakers,_1_Centre_Speaker,_1_Subwoofer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Sony_DAV-TZ145_5.1_2_Front_Speakers,_2_Surround_Speakers,_1_Centre_Speaker,_1_Subwoofer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Theaters"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Theatre"/>
+        <Ontology1:ChannelType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.1 Channel</Ontology1:ChannelType>
+        <Ontology1:PlayerType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DVD</Ontology1:PlayerType>
+        <Ontology1:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10499</Ontology1:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#ac1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#ac1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#AC"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Air_Conditioners"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blue</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</Ontology2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#ac2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#ac2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#AC"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Air_Conditioners"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3000</Ontology2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#cf1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#cf1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Fans"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</Ontology2:Price>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#cf1"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Fans"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#cf2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#cf2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Fans"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">600</Ontology2:Price>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#cf2"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Fans"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ceiling_Fans"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#has1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#has1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Audio_Speakers"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Audio_Systems"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Violet</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5000</Ontology2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#has2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#has2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Audio_Speakers"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Audio_Systems"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maroon</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6000</Ontology2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#hd1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#hd1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Hand_Blenders"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Hand_Grinders"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">red</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">900</Ontology2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#hd2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#hd2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Hand_Blenders"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Hand_Grinders"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">black</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1500</Ontology2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#ht1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#ht1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Theaters"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Theatre"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blue</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4000</Ontology2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#ht2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#ht2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Theaters"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Theatre"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cyan</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7000</Ontology2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#ind1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#ind1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Induction_Cooktops"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Inductions"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purple</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7500</Ontology2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#ind2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#ind2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Induction_Cooktops"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Inductions"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orange</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8000</Ontology2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#oven1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#oven1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Microwave_Ovens"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ovens"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lime</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9500</Ontology2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#oven2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#oven2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Microwave_Ovens"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ovens"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emerald</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10000</Ontology2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#p1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#p1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Irons"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brown</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</Ontology2:Price>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#p1"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Irons"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#p2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#p2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Irons"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yellow</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1500</Ontology2:Price>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#p2"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Irons"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Press"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#wbs1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#wbs1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Bluetooth_Speakers"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Wireless_Bluetooth_Speaker"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">black</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</Ontology2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spsclassifiedbuyin.tk/Ontology2.owl#wbs2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#wbs2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pooja/Ontology1.owl#Bluetooth_Speakers"/>
+        <rdf:type rdf:resource="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Wireless_Bluetooth_Speaker"/>
+        <Ontology2:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">brown</Ontology2:Color>
+        <Ontology2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</Ontology2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#AC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Entertainments"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Kitchen_Appliances"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Small_Home_Appliances"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Bluetooth_Speakers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Audio_Speakers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Home_Theaters"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Coffee_Makers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Dishwashers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Electric_Kettle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Hand_Blenders"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Induction_Cooktops"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pooja/Ontology1.owl#Microwave_Ovens"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Air_Conditioners"/>
+            <rdf:Description rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Appliances"/>
+            <rdf:Description rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Entertainment_Systems"/>
+            <rdf:Description rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Kitchen_and_Home_Appliances"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Hand_Grinders"/>
+            <rdf:Description rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Inductions"/>
+            <rdf:Description rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Ovens"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Audio_Systems"/>
+            <rdf:Description rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Home_Theatre"/>
+            <rdf:Description rdf:about="http://www.spsclassifiedbuyin.tk/Ontology2.owl#Wireless_Bluetooth_Speaker"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

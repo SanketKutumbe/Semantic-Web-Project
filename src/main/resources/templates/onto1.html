@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Onto1</title>
+    <link rel="stylesheet" media="all" href="https://static.codepen.io/assets/editor/themes/twilight-2cb75eda672e6bf9b693686a681374f37c6ea158ece367b9833d6254e47dffe8.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Bootstrap -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    h1 {
+      font-size: 40px;
+    color: black;
+    text-shadow: 2px 2px 4px #000000;
+}
+nav {    
+  display: block;
+  text-align: center;
+}
+nav ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+.nav a {
+  display:block; 
+  background: #111; 
+  color: #fff; 
+  text-decoration: none;
+  padding: 0.8em 1.8em;
+  text-transform: uppercase;
+  font-size: 80%;
+  letter-spacing: 2px;
+  text-shadow: 0 -1px 0 #000;
+  position: relative;
+}
+.nav{  
+  vertical-align: top; 
+  display: inline-block;
+  box-shadow: 
+    1px -1px -1px 1px #000, 
+    -1px 1px -1px 1px #fff, 
+    0 0 6px 3px #fff;
+  border-radius:6px;
+}
+.nav li {
+  position: relative;
+}
+.nav > li { 
+  float: left; 
+  border-bottom: 4px #aaa solid; 
+  margin-right: 1px; 
+} 
+.nav > li > a { 
+  margin-bottom: 1px;
+  box-shadow: inset 0 2em .33em -0.5em #555; 
+}
+.nav > li:hover, 
+.nav > li:hover > a { 
+  border-bottom-color: orange;
+}
+.nav li:hover > a { 
+  color:orange; 
+}
+.nav > li:first-child { 
+  border-radius: 4px 0 0 4px;
+} 
+.nav > li:first-child > a { 
+  border-radius: 4px 0 0 0;
+}
+.nav > li:last-child { 
+  border-radius: 0 0 4px 0; 
+  margin-right: 0;
+} 
+.nav > li:last-child > a { 
+  border-radius: 0 4px 0 0;
+}
+.nav li li a { 
+  margin-top: 1px;
+}
+.nav li a:first-child:nth-last-child(2):before { 
+  content: ""; 
+  position: absolute; 
+  height: 0; 
+  width: 0; 
+  border: 5px solid transparent; 
+  top: 50% ;
+  right:5px;  
+ }
+ .nav ul {
+  position: absolute;
+  white-space: nowrap;
+  border-bottom: 5px solid  orange;
+  z-index: 1;
+  left: -99999em;
+}
+.nav > li:hover > ul {
+  left: auto;
+  margin-top: 5px;
+  min-width: 100%;
+}
+.nav > li li:hover > ul { 
+  left: 100%;
+  margin-left: 1px;
+  top: -1px;
+}
+/* arrow hover styling */
+.nav > li > a:first-child:nth-last-child(2):before { 
+  border-top-color: #aaa; 
+}
+.nav > li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent; 
+  border-bottom-color: orange; 
+  margin-top:-5px
+}
+.nav li li > a:first-child:nth-last-child(2):before {  
+  border-left-color: #aaa; 
+  margin-top: -5px
+}
+.nav li li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent; 
+  border-right-color: orange;
+  right: 10px; 
+}
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Onto1</h1>
+    <hr>
+    <nav>
+  <ul class="nav">
+    <li><a href="#">Electronics</a>
+      <ul>
+		<li><a th:href="@{/onto1/AC}">AC</a></li>
+		<li><a href="#">Home Entertainments</a>
+           <ul>
+            	<li>
+					<a th:href="@{/onto1/Bluetooth_Speakers}">Bluetooth Speakers</a>	</li>
+            	<li><a th:href="@{/onto1/Home_Audio_Speakers}">Home Audio Speakers</a>	  </li>
+            <li><a th:href="@{/onto1/Home_Theaters}">Home Theaters</a>				</li>
+          	</ul>
+        </li>
+        <li><a href="#">Kitchen Appliances</a>
+          <ul>
+            <li><a th:href="@{/onto1/Coffee_Makers}">Coffee Makers</a></li>
+            <li><a th:href="@{/onto1/Dishwashers}">Dishwashers</a></li>
+            <li><a th:href="@{/onto1/Electric_Kettle}">Electric Kettle</a></li>
+            <li><a th:href="@{/onto1/Hand_Blenders}">Hand Blenders</a></li>
+            <li><a th:href="@{/onto1/Induction_Cooktops}">Induction Cooktops</a></li>
+            <li><a th:href="@{/onto1/Microwave_Ovens}">Microwave Ovens</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Small Home Appliances</a>
+          <ul>
+            <li><a th:href="@{/onto1/Fans}">Fans</a></li>
+            <li><a th:href="@{/onto1/Irons}">Irons</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    
+  </ul>
+</nav>
+    </div>
+    <hr>
+    <br>
+    <div class="w3-content w3-section" style="max-width:800px;max-height:500px">
+  <img class="mySlides w3-animate-fading" src="https://2.wlimg.com/product_images/bc-full/dir_72/2145167/electric-kitchen-appliances-1574120.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="http://dealsrightnow.net:5555/offers/-375.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="http://www.hadenappliances.com/img/products/home-big.png" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="http://www.dilitelpoint.com/web/images/Home/Electrodomestico-dilitel.png" style="width:100%">
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 10000);    
+}
+</script>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
