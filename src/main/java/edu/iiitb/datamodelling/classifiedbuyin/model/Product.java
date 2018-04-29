@@ -2,13 +2,24 @@ package edu.iiitb.datamodelling.classifiedbuyin.model;
 
 public class Product {
 
+    private int id;
     private String name;
     private String color;
     private String price;
     private String condensorType;
     private String channelType;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     private String playerType;
     private String source;
+
 
     public String getSource() {
         return source;

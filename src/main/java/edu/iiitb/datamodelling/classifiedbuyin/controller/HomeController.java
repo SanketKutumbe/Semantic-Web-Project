@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -35,9 +36,25 @@ public class HomeController {
     private final static String namespace1 = source1 + "#";
     private final static String namespace2 = source2 + "#";
     private final static String owlFile = "src/main/resources/static/Ontology1.owl";
+    private String owlFile2 = "src/main/resources/static/owl/new.owl";
 
-    @RequestMapping( value = { "/", "/home"}, method = RequestMethod.GET )
-    public ModelAndView home()
+
+    @RequestMapping( value = {"/home"}, method = RequestMethod.GET )
+    public ModelAndView home() throws IOException {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("add");
+        AddingOntologiesController aoc = new AddingOntologiesController();
+        aoc.update(owlFile);
+        System.out.println(aoc.getProperties().size());
+        modelAndView.addObject("iris", aoc.getIris());
+        modelAndView.addObject("classes",aoc.getClasses());
+        modelAndView.addObject("properties",aoc.getProperties());
+        modelAndView.addObject("superClasses",aoc.getSuperClasses());
+        return modelAndView;
+    }
+
+    @RequestMapping( value = { "/"}, method = RequestMethod.GET )
+    public ModelAndView index()
     {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("index");
@@ -58,7 +75,6 @@ public class HomeController {
     {
         ModelAndView modelAndView = new ModelAndView();
         products = HomeController.fetchSubject(namespace1, product);
-        StringBuffer sb = new StringBuffer();
         modelAndView.addObject("products", products);
         modelAndView.setViewName("table");
         return modelAndView;
@@ -86,6 +102,7 @@ public class HomeController {
 
     public static List<Product> fetchSubject(String namespace, String product)
     {
+        int id = 0;
         List<Product> listProd = new ArrayList<>();
         Product prod;
         BasicConfigurator.configure(new NullAppender());
@@ -108,8 +125,10 @@ public class HomeController {
 
         while( resIterator.hasNext() )
         {
-            prod = new Product();
+            id++;
 
+            prod = new Product();
+            prod.setId(id);
             Resource res = resIterator.next();
             String[] str = res.toString().split("/");
             if( str[3].equals("pooja") )

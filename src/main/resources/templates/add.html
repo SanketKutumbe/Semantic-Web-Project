@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>Entering iris</h1>
+
+    <form th:action = "@{/admin/iris}" method = "POST">
+        <input type = "text" name = "iri">
+        <input type="submit" value = "Submit" />
+    </form>
+
+    <h1>Initialising classes</h1>
+
+    <form th:action = "@{/admin/classes}" method = "POST">
+        <select name = "SubjectNS">
+            <option value = "m1" th:each="iri:${iris}">
+                <div th:text="${iri.getString()}"></div>
+            </option>
+        </select>
+        <input type = "text" name = "Subject">
+        <input type="submit" value = "Submit" />
+    </form>
+
+    <h1>Initialising SubClasses</h1>
+
+    <form th:action = "@{/admin/subClasses}" method = "POST">
+        <select name = "Subject">
+            <option value = "m1" th:each="class:${classes}">
+                <div th:text="${class.getIri() + class.getName()}"></div>
+            </option>
+        </select>
+        <select name = "Property">
+            <option value = "SubClass">Sub-Class of</option>
+        </select>
+        <select name = "Object">
+            <option value = "m1" th:each="superClass:${superClasses}">
+                <div th:text="${superClass.getIri() + superClass.getName()}"></div>
+            </option>
+        </select>
+        <input type="submit" value = "Submit" />
+    </form>
+
+    <h1>Initialising Instances</h1>
+
+    <form th:action = "@{/admin/subClasses}" method = "POST">
+        <select name = "SubjectNS">
+            <option value = "m1" th:each="iri:${iris}">
+                <div th:text="${iri.getString()}"></div>
+            </option>
+        </select>
+        <input type = "text" name = "Subject">
+        <select name = "Property">
+            <option value = "m1">Instance Of</option>
+        </select>
+        <select name = "Object">
+            <option value = "m1" th:each="superClass:${superClasses}">
+                <div th:text="${superClass.getIri() + superClass.getName()}"></div>
+            </option>
+        </select>
+        <input type="submit" value = "Submit" />
+    </form>
+
+    <h1>Mapping equivalency</h1>
+
+    <form th:action = "@{/admin/equivalency}" method = "POST">
+        <select name = "Subject">
+            <option value = "m1" th:each="class:${classes}">
+                <div th:text="${class.getIri() + class.getName()}"></div>
+            </option>
+        </select>
+        <select name = "Property">
+            <option value = "m1">Equivalent to</option>
+        </select>
+        <select name = "Object">
+            <option value = "m1" th:each="class:${classes}">
+                <div th:text="${class.getIri() + class.getName()}"></div>
+            </option>
+        </select>
+        <input type="submit" value = "Submit" />
+    </form>
+
+
+
+
+    <!--<tr th:each="product:${products}">-->
+        <!--<td th:id = "${product.getId()}" th:text="${product.getName()}">Name</td>-->
+        <!--<td th:text="${product.getPrice()}">Price</td>-->
+        <!--<td th:text="${product.getSource()}">Source</td>-->
+    <!--</tr>-->
+
+</body>
+</html>
