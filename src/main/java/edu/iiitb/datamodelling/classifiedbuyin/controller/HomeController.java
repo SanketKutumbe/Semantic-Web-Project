@@ -1,5 +1,7 @@
 package edu.iiitb.datamodelling.classifiedbuyin.controller;
 
+import com.hp.hpl.jena.rdf.model.*;
+import com.hp.hpl.jena.util.FileManager;
 import edu.iiitb.datamodelling.classifiedbuyin.model.Product;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.util.FileManager;
