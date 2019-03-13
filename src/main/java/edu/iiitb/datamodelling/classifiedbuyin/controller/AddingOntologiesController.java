@@ -1,10 +1,10 @@
 package edu.iiitb.datamodelling.classifiedbuyin.controller;
 
+import com.hp.hpl.jena.rdf.model.*;
+import com.hp.hpl.jena.util.FileManager;
 import edu.iiitb.datamodelling.classifiedbuyin.model.Classes;
 import edu.iiitb.datamodelling.classifiedbuyin.model.IRI;
 import edu.iiitb.datamodelling.classifiedbuyin.model.Instances;
-import org.apache.jena.rdf.model.*;
-import org.apache.jena.util.FileManager;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.varia.NullAppender;
 import org.springframework.stereotype.Controller;
@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import java.io.FileWriter;
 import java.io.IOException;
